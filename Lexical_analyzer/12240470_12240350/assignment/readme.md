@@ -1,39 +1,60 @@
-This is a readme file for a lexical analyzer created by Chetan(12240470) and Ayush Patel(12240350).
+# Lexical Analyzer for OCaml
 
-The language chosen by us is OCamel.
+Created by:  
+**Chetan (12240470)**  
+**Ayush Patel (12240350)**
 
-The following commands are in required to compile the lex file:
+---
 
-i. lex Assignment_ILP_1.l
-ii. gcc lex.yy.c
-iii. (./a.out < ocamel_file) > output_file
+## Language Chosen
 
-The output_file has the complete list of tokens.
+**OCaml**
 
-***IMPORTANT***
-Please ensure there is proper spacing given in the file so that each token can be identified.
+---
 
+## Compilation Instructions
 
+To compile and run the lexer, use the following commands:
 
-Basic information about the code:
+```bash
+lex Assignment_ILP_1.l
+gcc lex.yy.c
+./a.out < ocamel_file > output_file
+```
 
-Line No: 8-14 shows the tokens for various data-types.
-Line No: 17-28 shows the tokens for various operators_1.
-Line No: 31-37 shows the tokens for if-else, while loop, for loop keywords.
-Line No: 40-43 shows the tokens for various other keywords in OCamel.
-Line No: 46-51 shows the tokens for various referncing operators in OCamel.(As OCamel is not a mutable language therefore these operators are used for creating mutability in the language.)
-Line No: 54-55 shows the tokens for various exception-handlers.
-Line No: 58-60 shows the tokens for various operations related to functions.
-Line No: 63-66 shows the tokens for various ways of printing in OCamel.
-Line No: 69 shows the tokens for fetching data from user.
-Line No: 72-77 shows the tokens for the regex for the different data-types and identifiers.
-Line No: 79-80 shows the tokens for regex for comments.
-Line No: 82-105 shows the tokens for various math operators.
-Line No: 107-110 shows the tokens for various list operatiions in OCamel.
-Line No: 112-119 shows the tokens for various braces and other symbols.
-Line No: 121 shows the tokens for space.
-Line No: 123 shows the tokens for all other left symbols.
+- `ocamel_file`: Your source code written in OCaml.
+- `output_file`: Output file containing the list of tokens.
 
+> ⚠️ **IMPORTANT**:  
+> Ensure **proper spacing** in the input file. Incorrect spacing may lead to unrecognized or misidentified tokens.
 
-**CITATION**
-For knowing the operators, keywords and all other stuff related to OCamel we referred to the official website of ocamel https://ocaml.org/
+---
+
+## Code Structure Breakdown
+
+| Line No.    | Description                                                                                     |
+|-------------|-------------------------------------------------------------------------------------------------|
+| 8–14        | Tokens for various **data types**                                                               |
+| 17–28       | Tokens for **operators (set 1)**                                                                |
+| 31–37       | Tokens for **control structures**: `if`, `else`, `while`, `for`, etc.                           |
+| 40–43       | Tokens for **miscellaneous OCaml keywords**                                                     |
+| 46–51       | Tokens for **referencing/mutability operators** (since OCaml is not mutable by default)        |
+| 54–55       | Tokens for **exception handling** keywords                                                      |
+| 58–60       | Tokens for **function-related operations**                                                      |
+| 63–66       | Tokens for **printing statements** in OCaml                                                     |
+| 69          | Token for **input (fetching data from user)**                                                  |
+| 72–77       | Regex for **data types and identifiers**                                                        |
+| 79–80       | Regex for **comments**                                                                          |
+| 82–105      | Tokens for various **mathematical operators**                                                   |
+| 107–110     | Tokens for **list operations**                                                                  |
+| 112–119     | Tokens for **braces and symbols**                                                               |
+| 121         | Token for **whitespace**                                                                        |
+| 123         | Catch-all token for **other symbols**                                                           |
+
+---
+
+## Citation
+
+All OCaml keywords, operators, and language details were referenced from the official OCaml website:
+
+➡️ [https://ocaml.org/](https://ocaml.org/)
