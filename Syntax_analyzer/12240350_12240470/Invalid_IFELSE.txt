@@ -1,0 +1,19 @@
+let func()
+do
+	int a=10; 
+	int b=20;   
+	if(a<=14)
+	do
+		(* invalid as else without if *)
+		
+	else
+		do
+			a=10;
+		done
+		done
+	else
+	do
+		b=89;
+	done
+	return 0;
+done

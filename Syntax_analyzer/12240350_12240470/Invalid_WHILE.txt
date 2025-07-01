@@ -1,0 +1,17 @@
+let func()
+do
+	
+	int b=20;
+	int c=30;
+	while()   (* invalid as while without condition *)
+	do 
+	       
+	 	while(c>7)
+		do
+		int a=10;
+			c=c+1;
+		done
+	b=b+1;
+	done
+	return 0;
+done

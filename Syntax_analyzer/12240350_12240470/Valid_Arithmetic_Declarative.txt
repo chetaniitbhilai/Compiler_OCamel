@@ -1,0 +1,11 @@
+let func()
+do
+	float a=10.0f;
+	int b=20;
+	int c=30;
+	int d=a+b-c*a/b;
+	int e=ch+a; 
+	int f=c+d;    
+	            (*	This is Comment *)
+	
+done
